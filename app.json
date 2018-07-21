@@ -1,0 +1,29 @@
+{
+  "name": "Titita",
+  "scripts": {
+  },
+  "env": {
+    "MONGODB_URL": {
+      "required": true
+    },
+    "PORT": {
+      "required": true
+    },
+    "SESSION_SIGNING_KEY": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+    "mongolab"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
